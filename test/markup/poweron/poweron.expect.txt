@@ -1,0 +1,37 @@
+<span class="hljs-built_in">symconnect</span>
+
+<span class="hljs-keyword">target</span> <span class="hljs-operator">=</span> <span class="hljs-built_in">account</span>
+
+<span class="hljs-keyword">define</span>
+  <span class="hljs-keyword">#INCLUDE</span> <span class="hljs-string">&quot;RB.LISTEXPAND.DEF&quot;</span>
+
+  <span class="hljs-variable">testTitle</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Power On&quot;</span>
+  <span class="hljs-variable">testCharacter</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">character</span>
+  <span class="hljs-variable">testNumber</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">number</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment">[ <span class="hljs-doctag">@todo</span>: this is some todo ]</span>
+<span class="hljs-keyword">setup</span>
+  <span class="hljs-variable">testCharacter</span> <span class="hljs-operator">=</span> <span class="hljs-variable">@RGUSERCHR1</span>
+  <span class="hljs-variable">testNumber</span> <span class="hljs-operator">=</span> <span class="hljs-variable">@RGUSERNUM1</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">select</span>
+  <span class="hljs-keyword">none</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">print</span> <span class="hljs-keyword">title</span> <span class="hljs-operator">=</span> <span class="hljs-variable">testTitle</span>
+  <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;howdy&quot;</span> <span class="hljs-operator">+</span> <span class="hljs-built_in">account</span><span class="hljs-punctuation">:</span><span class="hljs-property">number</span>
+    <span class="hljs-keyword">newline</span>
+  <span class="hljs-keyword">print</span> <span class="hljs-variable">testCharacter</span> <span class="hljs-operator">+</span> <span class="hljs-string">&quot; &quot;</span> <span class="hljs-operator">+</span> <span class="hljs-title function_">format</span><span class="hljs-punctuation">(</span><span class="hljs-string">&quot;9&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-variable">testNumber</span><span class="hljs-punctuation">)</span>
+    <span class="hljs-keyword">newline</span>
+  <span class="hljs-keyword">if</span> <span class="hljs-built_in">account</span><span class="hljs-punctuation">:</span><span class="hljs-property">openDate</span> <span class="hljs-operator">&lt;&gt;</span> <span class="hljs-string">&#x27;--/--/--&#x27;</span> <span class="hljs-operator">and</span> <span class="hljs-variable constant_">sysUserNumber</span> <span class="hljs-operator">=</span> <span class="hljs-number">1234</span> <span class="hljs-keyword">then</span>
+    <span class="hljs-keyword">do</span>
+      <span class="hljs-keyword">call</span> <span class="hljs-title function_">testProcedure</span>
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">procedure</span> <span class="hljs-title function_">testProcedure</span>
+  <span class="hljs-keyword">print</span> <span class="hljs-built_in">account</span><span class="hljs-punctuation">:</span><span class="hljs-property">alternateaddress</span><span class="hljs-punctuation">:</span><span class="hljs-number">1</span>
+    <span class="hljs-keyword">newline</span>
+<span class="hljs-keyword">end</span>

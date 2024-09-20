@@ -1,0 +1,27 @@
+{
+  "name": "highlightjs-poweron",
+  "version": "0.0.1",
+  "description": "Highlight.js grammar for Jack Henry PowerOn language",
+  "main": "src/poweron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libum-llc/highlightjs-poweron.git"
+  },
+  "keywords": [
+    "PowerOn",
+    "Jack Henry",
+    "Symitar",
+    "hljs",
+    "highlightjs",
+    "highlight.js"
+  ],
+  "author": "Dylan Martinez (https://github.com/martinezdylan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/libum-llc/highlightjs-poweron/issues"
+  },
+  "homepage": "https://github.com/libum-llc/highlightjs-poweron"
+}
