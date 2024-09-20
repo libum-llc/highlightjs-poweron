@@ -1,9 +1,9 @@
-/**
- * Language: PowerOn
- * Author: Dylan Martinez <dylan@libum.io>
- * Category: Symitar, Jack Henry, Credit Union Platform
- * Description: Highlight.js grammar for Jack Henry PowerOn language
- */
+/*
+Language: PowerOn
+Author: Dylan Martinez <dylan@libum.io>
+Category: Symitar, Jack Henry, Credit Union Platform
+Description: Highlight.js grammar for Jack Henry PowerOn language
+*/
 
 export default function (hljs) {
   const regex = hljs.regex;
