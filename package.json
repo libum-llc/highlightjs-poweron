@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/libum-llc/highlightjs-poweron/issues"
   },
-  "homepage": "https://github.com/libum-llc/highlightjs-poweron"
+  "homepage": "https://github.com/libum-llc/highlightjs-poweron",
+  "devDependencies": {
+    "prettier": "3.3.3"
+  }
 }
