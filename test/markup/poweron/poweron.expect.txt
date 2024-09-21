@@ -6,6 +6,7 @@
   <span class="hljs-keyword">#INCLUDE</span> <span class="hljs-string">&quot;RB.LISTEXPAND.DEF&quot;</span>
 
   <span class="hljs-variable">testTitle</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Power On&quot;</span>
+  <span class="hljs-variable">accountList</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">character</span>
   <span class="hljs-variable">testCharacter</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">character</span>
   <span class="hljs-variable">testNumber</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">number</span>
 <span class="hljs-keyword">end</span>
