@@ -14,14 +14,6 @@ Simply load this module after loading Highlight.js. You'll use the minified vers
 </script>
 ```
 
-### Using directly from the UNPKG CDN
-```html
-<script
-	type="text/javascript"
-	src="https://unpkg.com/highlightjs-luau/dist/luau.min.js">
-</script>
-```
-
 - More info: <https://unpkg.com>
 
 ### With Node or another build system
