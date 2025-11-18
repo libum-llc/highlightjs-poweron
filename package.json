@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Highlight.js grammar for Jack Henry PowerOn language",
   "main": "src/poweron.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint": "prettier --write src/*.js"
   },
   "repository": {
@@ -26,6 +27,8 @@
   },
   "homepage": "https://github.com/libum-llc/highlightjs-poweron",
   "devDependencies": {
+    "highlight.js": "^11.11.1",
+    "jest": "^30.2.0",
     "prettier": "3.3.3"
   }
 }
