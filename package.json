@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-poweron",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Highlight.js grammar for Jack Henry PowerOn language",
   "main": "dist/poweron.min.js",
   "module": "dist/poweron.es.min.js",
