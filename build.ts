@@ -28,16 +28,7 @@ async function build(): Promise<void> {
     outfile: 'dist/poweron.es.min.js',
   });
 
-  // Build non-minified ES module version
-  await esbuild.build({
-    entryPoints: ['src/poweron.ts'],
-    bundle: false,
-    format: 'esm',
-    outfile: 'dist/poweron.js',
-    platform: 'neutral',
-  });
-
-  console.log('✅ Build complete: dist/poweron.min.js, dist/poweron.es.min.js, dist/poweron.js');
+  console.log('✅ Build complete: dist/poweron.min.js, dist/poweron.es.min.js');
 }
 
 build().catch((error) => {

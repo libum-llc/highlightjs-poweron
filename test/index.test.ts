@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import hljs from 'highlight.js';
-import hljsDefinePowerOn from '../dist/poweron.js';
+import hljsDefinePowerOn from '../dist/poweron.es.min.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
