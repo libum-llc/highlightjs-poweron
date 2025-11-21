@@ -2,12 +2,20 @@
   "name": "highlightjs-poweron",
   "version": "0.0.1",
   "description": "Highlight.js grammar for Jack Henry PowerOn language",
-  "main": "src/poweron.js",
+  "main": "dist/poweron.js",
+  "types": "dist/poweron.d.ts",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "lint": "prettier --write src/*.js"
+    "build": "tsx build.ts && tsc --declaration --emitDeclarationOnly",
+    "prepublishOnly": "pnpm run build",
+    "test": "pnpm run build && node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "prettier --write src/*.ts test/*.ts *.ts",
+    "generate-expected": "pnpm run build && tsx test/generate-expected.ts"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/libum-llc/highlightjs-poweron.git"
@@ -27,8 +35,12 @@
   },
   "homepage": "https://github.com/libum-llc/highlightjs-poweron",
   "devDependencies": {
+    "@types/node": "^24.10.1",
+    "esbuild": "^0.27.0",
     "highlight.js": "^11.11.1",
     "jest": "^30.2.0",
-    "prettier": "3.3.3"
+    "prettier": "3.3.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }

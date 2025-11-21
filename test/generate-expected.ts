@@ -1,10 +1,11 @@
-const hljs = require('highlight.js');
-const fs = require('fs');
-const path = require('path');
+import hljs from 'highlight.js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import hljsDefinePowerOn from '../dist/poweron.js';
 
-// Import the PowerOn language definition
-const poweronModule = require('../src/poweron.js');
-const hljsDefinePowerOn = poweronModule.default || poweronModule;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 hljs.registerLanguage('poweron', hljsDefinePowerOn);
 
